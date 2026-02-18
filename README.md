@@ -21,7 +21,7 @@ Requirements:
 
 Steps:
 
-1. Clone the repository and `cd` into it: `git clone https://github.com/waktaplay/discord-oidc-worker.git && cd discord-oidc-worker`
+1. Clone the repository and `cd` into it: `git clone https://github.com/kms0219kms/discord-oidc-worker.git && cd discord-oidc-worker`
 
 2. Install dependencies: `pnpm install` (or `npm install` if you don't have `pnpm` installed)
 
