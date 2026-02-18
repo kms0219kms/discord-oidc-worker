@@ -70,7 +70,7 @@ router.post(
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded',
         'User-Agent':
-          'DiscordBot (https://github.com/waktaplay/discord-oidc-worker, v2.0.2)',
+          'DiscordBot (https://github.com/kms0219kms/discord-oidc-worker, v2.0.2)',
       },
     }).then(res => res.json<RESTPostOAuth2AccessTokenResult>());
 
@@ -89,7 +89,7 @@ router.post(
       headers: {
         Authorization: `Bearer ${r['access_token']}`,
         'User-Agent':
-          'DiscordBot (https://github.com/waktaplay/discord-oidc-worker, v2.0.2)',
+          'DiscordBot (https://github.com/kms0219kms/discord-oidc-worker, v2.0.2)',
       },
     }).then(res => res.json<APIUser>());
 
@@ -120,7 +120,7 @@ router.post(
           headers: {
             Authorization: `Bearer ${r['access_token']}`,
             'User-Agent':
-              'DiscordBot (https://github.com/waktaplay/discord-oidc-worker, v2.0.2)',
+              'DiscordBot (https://github.com/kms0219kms/discord-oidc-worker, v2.0.2)',
           },
         }
       );
@@ -167,7 +167,7 @@ router.post(
                       ? `Bearer ${r['access_token']}`
                       : `Bot ${c.cloudflare.env.DISCORD_TOKEN}`,
                     'User-Agent':
-                      'DiscordBot (https://github.com/waktaplay/discord-oidc-worker, v2.0.2)',
+                      'DiscordBot (https://github.com/kms0219kms/discord-oidc-worker, v2.0.2)',
                   },
                 }
               ).then(res => res.json<APIGuildMember>());
